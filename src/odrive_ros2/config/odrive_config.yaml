@@ -1,0 +1,15 @@
+/**:
+  ros__parameters:
+    left_motor_axis: 0  # Axis number for left motor (0 or 1 typically)
+    right_motor_axis: 1  # Axis number for right motor (0 or 1 typically)
+    wheel_radius: 0.0762  # Wheel radius in meters (3 inches)
+    wheel_base: 0.5  # Distance between wheels in meters
+    ticks_per_rev: 8192  # Encoder counts per revolution
+    connect_on_startup: true  # Connect to ODrive on node startup
+    simulation_mode: false  # Set to true to run without actual hardware
+    publish_tf: true  # Publish TF transforms
+    control_mode: "velocity"  # Control mode: "velocity", "position", or "torque"
+    odom_frame: "odom"  # Frame ID for odometry
+    base_frame: "base_link"  # Frame ID for robot base
+    max_motor_speed: 30.0  # Maximum motor speed in rad/s
+    gear_ratio: 1.0  # Gear ratio if using geared motors
